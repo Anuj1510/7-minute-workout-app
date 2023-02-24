@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="20dp"
+    android:background="@drawable/background"
+    tools:context=".EndActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarExerciseEnd"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:theme="@style/ToolbarTheme"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        app:titleTextColor="@color/colorPrimary"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="77dp"
+        android:layout_marginTop="25dp"
+        android:text="Congratulations on Completing the Exercises!!"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="19sp"
+        android:textStyle="bold"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/tv_result"
+        android:layout_width="241dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/done"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="265dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hey Well Done"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_primary_dark"
+
+        />
+
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FINISH"
+        android:textSize="20sp"
+        android:layout_marginTop="100dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/design_default_color_primary"
+        />
+
+</LinearLayout>
