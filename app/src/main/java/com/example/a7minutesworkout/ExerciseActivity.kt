@@ -181,11 +181,11 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     private fun setExerciseProgressBar(){
         binding?.progressBarExercise?.progress = ExerciseProgress
 
-        ExerciseTimer = object : CountDownTimer(10000,1000){
+        ExerciseTimer = object : CountDownTimer(30000,1000){
             override fun onTick(p0: Long) {
                 ExerciseProgress++
-                binding?.progressBarExercise?.progress = 10 - ExerciseProgress
-                binding?.tvTimerExercise?.text = (10 - ExerciseProgress).toString()// we cannot assign number to our text so we convert it into string
+                binding?.progressBarExercise?.progress = 30 - ExerciseProgress
+                binding?.tvTimerExercise?.text = (30 - ExerciseProgress).toString()// we cannot assign number to our text so we convert it into string
             }
 
             override fun onFinish() {
